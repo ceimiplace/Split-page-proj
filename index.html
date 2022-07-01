@@ -66,7 +66,7 @@
 
         .silly {
             position: absolute;
-            background-color: rgba(0, 255, 255, 0.308);
+            background-color: rgba(0, 255, 255, 0.163);
             width: 100%;
             height: 100%;
         }
@@ -115,8 +115,12 @@
     aray.forEach(item => {
         item.addEventListener("mouseover", () => {
             remover();
-
             item.classList.add("active")
+        })
+    })
+    aray.forEach(item => {
+        item.addEventListener("mouseout", () => {
+            remover();
         })
     })
 </script>
